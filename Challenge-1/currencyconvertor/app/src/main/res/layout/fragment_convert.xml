@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <AutoCompleteTextView
+            android:id="@+id/base_currency_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Base Currency (e.g., USD)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:enabled="true"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginTop="16dp" />
+
+    <AutoCompleteTextView
+            android:id="@+id/target_currency_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target Currency (e.g., VND)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:enabled="true"
+            android:focusable="true"
+            android:clickable="true"/>
+
+    <EditText
+            android:id="@+id/amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+    <Button
+            android:id="@+id/convert_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert" />
+
+    <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conversion Result"
+            android:textSize="16sp"
+            android:paddingTop="8dp"/>
+
+    <TextView
+            android:id="@+id/error_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:paddingTop="8dp"/>
+</LinearLayout>
