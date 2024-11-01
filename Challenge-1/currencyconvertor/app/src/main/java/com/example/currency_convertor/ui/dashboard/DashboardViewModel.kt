@@ -17,7 +17,9 @@ class DashboardViewModel(
     private val context: Context
 ) : ViewModel() {
 
-    private val _conversionRates = MutableLiveData<MutableList<Pair<String, Double>>>()
+    private val _conversionRates = MutableLiveData<MutableList<Pair<String, Double>>>().apply {
+        value = mutableListOf()
+    }
     val conversionRates: LiveData<MutableList<Pair<String, Double>>> get() = _conversionRates
 
     private val _error = MutableLiveData<String>()

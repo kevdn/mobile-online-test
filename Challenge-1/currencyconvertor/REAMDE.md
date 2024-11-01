@@ -63,6 +63,11 @@ This Android Currency Converter app allows users to convert currencies and save 
    - Copy your API key from the dashboard.
    - Open `Constants.kt` and replace `"YOUR_API_KEY"` with your actual API key.
 3. **Install the Dependencies**:
+    Create a local.properties file in the root directory and add the following line:
+    ```properties
+   sdk.dir = /path/to/your/android/sdk
+   ```
+   Then, build the project using Gradle:
    ```bash
    ./gradlew build
    ```
