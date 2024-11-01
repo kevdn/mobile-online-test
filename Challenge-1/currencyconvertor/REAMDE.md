@@ -47,7 +47,7 @@ This Android Currency Converter app allows users to convert currencies and save 
 - **`ui/`**: Contains `ConvertFragment` and `DashboardFragment` for currency conversion and rate display, alongside corresponding ViewModel classes for managing data and business logic.
 - **`data/local/`**: Contains `CurrencyRate` (entity) responsible for managing local data persistence.
 - **`data/model/`**: Defines the `Currency` data model, mapping to the structure of currencies in the app. Also includes api response models.
-- **`network/`**: Defines `ApiService`, the Retrofit interface for API communication, handling endpoint definitions and API requests.
+- **`api/`**: Defines `ApiService`, the Retrofit interface for API communication, handling endpoint definitions and API requests.
 - **`utils/`**: Includes `Constants.kt` for static values like API keys, and `CurrencyUtils.kt` for helper functions, e.g., loading currency data from JSON.
 
 
@@ -55,8 +55,8 @@ This Android Currency Converter app allows users to convert currencies and save 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/CurrencyConverterApp.git
-   cd CurrencyConverterApp
+   git clone https://github.com/kevdn/mobile-online-test
+   cd Challenge-1/CurrencyConverterApp
    
 2. **Set up API Key**:
    - Create an account on [ExchangeRate-API](https://www.exchangerate-api.com/).
@@ -74,7 +74,7 @@ This Android Currency Converter app allows users to convert currencies and save 
    ```bash
    ./gradlew assembleDebug
    ```
-   You can find the APK at `build/outputs/apk/androidTest/debug/app-debug-androidTest.apk`.
+   You can find the APK at `app/build/outputs/apk/debug/app-debug.apk`.
  
 ## Additional Notes
 
